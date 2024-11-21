@@ -1,14 +1,19 @@
-TF-IDF Fraud Call Detector
-This project uses TF-IDF (Term Frequency-Inverse Document Frequency) along with machine learning models to detect fraudulent calls based on call transcripts. The goal is to build a system that can classify incoming call transcripts as either fraudulent or non-fraudulent based on their content.
+# TF-IDF Fraud Call Detector
 
-The system leverages popular classifiers, including Support Vector Machines (SVM), Random Forest, and other models, to analyze textual patterns in the call data. By focusing on key terms and phrases from the transcripts, the model can detect suspicious or abnormal behavior often associated with fraud.
+## Description
 
-Features:
-Text Preprocessing: Handles cleaning and vectorization of call transcripts using TF-IDF.
-Multiple Classifiers: Supports several machine learning models for prediction (e.g., SVM, Random Forest, Logistic Regression).
-Fraudulent Call Detection: Classifies calls as fraudulent or non-fraudulent based on the transcript.
-TF-IDF Model: Uses TF-IDF to transform text into numerical features suitable for classification.
-Customizable: Easily extendable to incorporate additional features or models.
-Use Case:
-Detect fraudulent calls in telecommunication systems or customer service interactions.
-Can be applied in financial institutions, e-commerce, or customer support industries to flag potential fraud.
+A machine learning-based system that classifies call transcripts as **fraudulent** or **non-fraudulent** using **TF-IDF** and classifiers like **SVM**, **Random Forest**, **Logistic Regression**, and **Naive Bayes**. The system analyzes call content for patterns associated with fraud, helping in fraud detection for telecommunication and customer service industries.
+
+## Features
+
+- **TF-IDF** vectorization to preprocess and convert text data into numerical format.
+- Models trained using **Support Vector Machine (SVM)**, **Random Forest**, **Logistic Regression**, **Multinomial Naive Bayes**, and **Gradient Boosting (XGBoost)**.
+- Ensemble prediction system to combine model outputs.
+- Adjustable model hyperparameters for better accuracy.
+- Class imbalance handling using class weights.
+
+## Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/TF-IDF-Fraud-Call-Detector.git
